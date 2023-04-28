@@ -1,0 +1,20 @@
+<section class="container-home">
+  <h1 class="name-company">R. SAVILLA SAS BIC</h1>
+  <h3 class="message">Recolección y Aprovechamiento de Materiales</h3>
+  <h5 class="message">Nit: 900950210-0</h5>
+</section>
+<div class="w-full min-h-screen section-background">
+  <section class="container-detail" *ngFor="let section of dropsSections">
+    <div class="container-ops">
+      <div class="drop" [style]="{'--clr': drop.color }" *ngFor="let drop of section">
+        <div class="content">
+          <i [class]="drop.icon"></i>
+          <p class="py-2">
+            {{drop.text}}
+          </p>
+          <a [routerLink]="drop.route">Conocer mas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

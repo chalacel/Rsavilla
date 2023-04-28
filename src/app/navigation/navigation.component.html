@@ -1,0 +1,9 @@
+<div class="main-container">
+    <p-scrollPanel #scrollPanel class="custom-panel overflow-auto h-full" [style]="{ width: '100%', height: '100%' }">
+        <app-header [transparent]="!scrolled" [hide]="hideHeader"></app-header>
+        <div class="router-body">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer style="margin-top: auto;"></app-footer>
+    </p-scrollPanel>
+</div>

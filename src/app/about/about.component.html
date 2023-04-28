@@ -1,0 +1,34 @@
+<div class="background">
+  <main class="work-content">
+      <h1>¿Quiénes Somos?</h1>
+      <span class="body">
+        R Savilla SAS es una sociedad por acciones simplificadas matriculada el martes 15 de marzo de 2016 en la cámara de comercio de Bogotá. Esta empresa se dedica principalmente a comercio al por mayor de desperdicios, desechos y chatarra.
+  </span>
+  <span class="body">
+      A través de la reincorporación de madera proveniente de estibas, desarrollamos
+      procesos de economía circular como nuestro proceso de valor, siendo reconocidos como
+      negocios verdes.
+  </span>
+
+  <h1>Misión</h1>
+
+  <span class="body">
+    Contribuir en la recuperación de la madera y afines, aportando en la preservación del medio ambiente y los recursos naturales, realizando y ejecutando proyectos que surjan desde un pensamiento ecológico y sostenible, en beneficio de las personas y el entorno, de manera normativa, con calidad y ambiente de familia.
+  </span>
+  <h1>Visión</h1>
+
+  <span class="body">
+    Ser una empresa sostenible en la recuperación y nuevo uso de la madera y afines, preocupada por conservar el ambiente, con desarrollo económico, construyendo una conciencia humanista y ambientalista, que reconozca la obra de Dios en el cuidado del planeta.
+  </span>
+  <div class="flex flex-row w-full justify-content-center">
+      <img class="about-image" src="../../assets/images/logo-sevilla.png" alt="cadena de Valor" style="max-width: 300px">
+  </div>
+
+    <div class="flex-1">
+        <div class="w-full flex flex-row justify-content-center">
+            <img src="../../assets/images/carousel/image{{first + 1}}.jpg" class="carousel-image"/>
+        </div>
+        <p-paginator class="app-paginator" [first]="first" [rows]="1" [totalRecords]="totalRecords" (onPageChange)="onPageChange($event)" [showJumpToPageDropdown]="true" [showPageLinks]="false"></p-paginator>
+    </div>
+</main>
+</div>

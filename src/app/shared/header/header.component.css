@@ -1,0 +1,34 @@
+.topnav {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 100%;
+  height: 4rem;
+  transition: top 0.4s ease-in-out;
+  top: 0;
+  position: fixed;
+  text-shadow: 0 0 4px #fff;
+}
+
+:host {
+  width: 100%;
+  height: 4rem;
+  z-index: 5;
+}
+
+.hide {
+  top: -4rem;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.logo:hover {
+  background: rgba(163,  157, 157, 0.5);
+  transition: 1s;
+  border-radius: 10px;
+}

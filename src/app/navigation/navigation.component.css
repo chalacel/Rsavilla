@@ -1,0 +1,7 @@
+.main-container {
+    height: 100vh;
+}
+
+.router-body {
+    min-height: calc(100vh - 3rem);
+}

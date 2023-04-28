@@ -1,0 +1,165 @@
+.container-home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/images/leaves-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.container-home .name-company {
+  font-size: 4em;
+}
+
+.container-home .message {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container-home .name-company, .message {
+  text-shadow: 0 0 5px #fff;
+}
+
+/*
+Aqui inician los estilos de los efectos cards
+*/
+
+.section-background {
+  background: #ECE8E8;
+}
+
+
+.container-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #ECE8E8;
+}
+
+.container-ops {
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+
+.container-ops .drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+                    25px 35px 20px rgba(0, 0, 0, 0.05),
+                    25px 30px 30px rgba(0, 0, 0, 0.05),
+              inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-ops .drop:nth-child(1) {
+  border-radius: 50% 50% 49% 51% / 73% 73% 27% 27%;
+}
+
+.container-ops .drop:nth-child(2) {
+  border-radius: 60% 40% 75% 25% / 47% 59% 41% 53%;
+}
+
+.container-ops .drop:nth-child(3) {
+  border-radius: 42% 58% 44% 56% / 68% 60% 40% 32%;
+}
+
+.container-ops .drop:hover {
+  border-radius: 50%;
+}
+
+.container-ops .drop::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container-ops .drop::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container-ops .drop .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+
+.container-ops .drop .content i {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+              inset -2px -5px 10px rgba(255, 255, 255, 1),
+                    15px 15px 10px rgba(0, 0, 0, 0.05),
+                    15px 10px 15px rgba(0, 0, 0, 0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
+
+.container-ops .drop .content a {
+  position: relative;
+  padding: 10px 25px;
+  background: var(--clr);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.container-ops .drop .content a:hover {
+  opacity: 1;
+}
+
+.container-ops .drop .content a::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}

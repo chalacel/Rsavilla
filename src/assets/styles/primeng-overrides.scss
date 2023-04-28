@@ -1,0 +1,94 @@
+.custom-panel {
+    .p-scrollpanel-bar {
+        background-color: var(--quaternary-color);
+    }
+    .p-scrollpanel-content{
+        height: calc(100% + 18px);
+        width: calc(100% + 18px);
+        padding: 0 0 18px 0;
+    }
+}
+
+.white-variant {
+    --navbar-color: white;
+}
+
+.app-menubar {
+    width: 100%;
+    .p-menubar {
+        .p-menubar-button {
+            i {
+                font-size: 1.25rem;
+                font-weight: 800;
+                color: var(--text-color);
+            }
+        }
+        gap: 0.25rem;
+        background-color: transparent;
+        justify-content: space-between;
+        .p-menubar-root-list {
+            gap: 0.25rem;
+            .p-menubar-end {
+                margin: 0;
+            }
+            .p-menuitem {
+                &:hover {
+                    background-color: var(--primary-highligth);
+                    border-radius: 0.5rem !important;
+                }
+                .p-menuitem-link:focus {
+                    box-shadow: none;
+                }
+                .p-menuitem-link {
+                    
+                    position: relative;
+                    &::after {
+                        content: "";
+                        height: 2px;
+                        position: absolute;
+                        bottom: 10%;
+                        background-color: var(--navbar-color);
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 4px;
+                        transition:all 0.3s ease-in-out;
+                        width: 0;
+                    }
+                    &:hover::after {
+                        width: calc(100% - 1.5rem); 
+                    }
+                    padding: 0.75rem 0.75rem;
+                    color: var(--navbar-color);
+                    &:not(.p-disabled) {
+                        &:hover {
+                            background-color: var(--primary-highligth);
+                        }
+                        &.p-menuitem-link-active, &.p-menuitem-link-active:hover {
+                            background-color: var(--primary-color);
+                            color: var(--primary-color-text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .p-menuitem-icon, .p-menuitem-text, .p-submenu-icon {
+        color: inherit !important;
+    }
+    .p-submenu-list {
+        border-radius: 0.5rem;
+    }
+}
+
+.app-paginator {
+    .p-paginator {
+        background-color: transparent;
+    }
+    .p-dropdown-panel {
+        .p-dropdown-items {
+            .p-dropdown-item.p-highlight {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}

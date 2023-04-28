@@ -1,0 +1,17 @@
+<footer class="caption flex flex-row flex-wrap gap-2 justify-content-center px-3 py-2 bg-primary">
+
+    <ng-container *ngFor="let dato of datos let last=last">
+        <div class="flex flex-row align-items-center gap-2">
+            <span class="text-0">{{dato.label}}</span>
+            <span class="h-full py-2 px-2 separador" *ngIf="!last">|</span>
+        </div>
+    </ng-container>
+
+    <div class="flex flex-row gap-3 px-3 align-items-center">
+        <ng-container *ngFor="let socialMedia of socialMedias">
+            <a class="text-0" [href]="socialMedia.url" target="_blank">
+                <i [class]="socialMedia.icon" class="text-xl"></i>
+            </a>
+        </ng-container>
+    </div>
+</footer>

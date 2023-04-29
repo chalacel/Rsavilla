@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   first: number = 0;
-  totalRecords: number = 22;
+  totalRecords: number = 15;
 
   constructor() {
 

@@ -9,9 +9,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class HeaderComponent {
 
-  tapnavVariant: boolean = false;
+  topnavVariant: boolean = false;
   @Input() transparent: boolean = false; //Estilos al padre
   @Input() hide: boolean = false;//Estilos al padre
+  logo:string="../../../assets/images/logo-sevilla.png";
+  logoblanco:string="../../../assets/images/logo-letras-blancas.png";
   enlaces: MenuItem[] = [
     { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción
     //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores 
@@ -32,7 +34,7 @@ export class HeaderComponent {
       .subscribe((event) => {
         if(event instanceof NavigationEnd) {
           const url: string = event.urlAfterRedirects;
-          this.tapnavVariant = url.startsWith("/home");
+          this.topnavVariant = url.startsWith("/home");
         }
       })
   }

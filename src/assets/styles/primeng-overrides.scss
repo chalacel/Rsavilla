@@ -11,6 +11,7 @@
 
 .white-variant {
     --navbar-color: white;
+    --navbar-background-color: rgba(0, 0, 0, 0.4);
 }
 
 .app-menubar {
@@ -23,11 +24,14 @@
                 color: var(--text-color);
             }
         }
+
         gap: 0.25rem;
         background-color: transparent;
         justify-content: space-between;
         .p-menubar-root-list {
+            
             gap: 0.25rem;
+            @media screen and (max-width: 1024px) {background-color: var(--navbar-background-color);}
             .p-menubar-end {
                 margin: 0;
             }

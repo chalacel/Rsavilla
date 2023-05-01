@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  nombreCompleto : string = '';
+  primerApellido : string = '';
+  segundoApellido : string = '';
+  ciudad : string = '';
+  telefono : string = '';
+  email : string = '';
 }

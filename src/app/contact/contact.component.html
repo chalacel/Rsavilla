@@ -1,3 +1,68 @@
-<div class="loading-background">
-    <img src="../../assets/images/loading.jpeg" alt="cargando" class="loading-image">
-</div>
+<section class="background">
+  <div class="formContact">
+    <div class="container">
+      <h2>¡Te esperamos!</h2>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="nombreCompleto" required="required" />
+            <span class="text">Nombre completo</span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="primerApellido" required="required" />
+            <span class="text">Primer apellido</span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="segundoApellido" required="required" />
+            <span class="text">Segundo apellido</span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="ciudad" required="required" />
+            <span class="text">Ciudad</span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="telefono" required="required" />
+            <span class="text">Telefono</span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" pInputText [(ngModel)]="email" required="required" />
+            <span class="text">Email</span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox textarea">
+            <textarea required="required"></textarea>
+            <span class="text">Escribe tu mensaje...</span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row100">
+        <div class="col">
+          <input type="submit" value="send" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

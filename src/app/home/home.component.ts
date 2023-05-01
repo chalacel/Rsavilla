@@ -17,7 +17,7 @@ export class HomeComponent {
       {
         color: "#4A8CB0",
         text: "Te invitamos a conocer nuestros  productos y servicios. ¡Es vital para nostross brindarte la mejor experiencia acompañanos!",
-        route: "/products",
+        route: "/portfolio",
         icon: "pi pi-shopping-cart",
       },
       {

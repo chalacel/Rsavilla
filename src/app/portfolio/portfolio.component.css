@@ -1,16 +1,28 @@
-.loading-image {
+.background::before {
+    content: "";
+    background-image: url('../../assets/images/FondoWork.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1024px;
-    min-width: 100px;
-    object-fit: contain;
-    margin: auto;
-    display: block;
+    height: 100%;
+    z-index: -1;
+  }
+  
+.products-grid {
+    padding: 2rem;
+    gap: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 16rem));
+    grid-auto-rows: auto;
 }
 
-.loading-background {
-    padding: 2rem;
-    background-color: #001c27;
-    height: 100vh;
-    width: 100vw;
+.product-card {
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

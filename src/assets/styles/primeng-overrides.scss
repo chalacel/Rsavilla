@@ -96,3 +96,27 @@
         }
     }
 }
+
+
+.app-image {
+    img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.5s all;
+        border-radius: 0.5rem 5rem 0.5rem 5rem;
+        transform: scale(0.975, 0.975);
+        &:hover {
+            transform: scale(1, 1);
+        }
+    }
+    .p-image-preview-indicator {
+        transition: 0.5s all;
+        transform: scale(0.975, 0.975);
+        border-radius: 0.5rem 5rem 0.5rem 5rem;
+        &:hover {
+            transform: scale(1, 1);
+        }
+    }
+}

@@ -1,3 +1,17 @@
-<div class="loading-background">
-    <img src="../../assets/images/loading.jpeg" alt="cargando" class="loading-image">
-</div>
+<div class="background pt-7 flex">
+    <div class="products-grid flex-grow-1">
+      <ng-container *ngFor="let product of products">
+        <div class="product-card">
+          <p-image styleClass="app-image w-16rem h-12rem" [src]="product.url" [alt]="product.category" width="250" [preview]="true"></p-image>
+          <div class="flex flex-column gap-2">
+            <span class="font-semibold text-sm">{{product.name}}</span>
+            <div class="flex flex-row gap-2 align-items-center">
+              <p-button styleClass="p-button-sm p-button-secondary" icon="pi pi-plus" (onClick)="addProduct(product)" label="Agregar"></p-button>
+              <p-button [disabled]="!cart.products[product.id]?.count" styleClass="p-button-outlined p-button-sm p-button-secondary" icon="pi pi-minus" (onClick)="removeProduct(product)" label="Remover"></p-button>
+              <span>{{cart.products[product.id]?.count ?? 0}}</span>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>

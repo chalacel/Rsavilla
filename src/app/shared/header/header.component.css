@@ -5,10 +5,14 @@
   transition: top 0.4s ease-in-out;
   top: 0;
   position: fixed;
+  z-index: 1000;
   text-shadow: 0 0 4px #fff;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: var(--surface-0);
 }
 
 :host {
+  background-color: transparent;
   width: 100%;
   height: 4rem;
   z-index: 5;
@@ -16,15 +20,6 @@
 
 .hide {
   top: -4rem;
-}
-
-.bg-black {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white;
-}
-
-.bg-transparent {
-  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .logo:hover {

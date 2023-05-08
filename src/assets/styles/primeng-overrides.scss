@@ -9,22 +9,14 @@
     }
 }
 
-.white-variant {
-    --navbar-color: white;
-    --navbar-background-color: rgba(0, 0, 0, 0.4);
-}
-
 .app-menubar {
+    --navbar-color: white;
+    --navbar-background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     .p-menubar {
         .p-menubar-button {
-            i {
-                font-size: 1.25rem;
-                font-weight: 800;
-                color: var(--text-color);
-            }
+            color: var(--navbar-color);
         }
-
         gap: 0.25rem;
         background-color: transparent;
         justify-content: space-between;
@@ -104,19 +96,33 @@
         aspect-ratio: 4/3;
         object-fit: cover;
         cursor: pointer;
-        transition: 0.5s all;
         border-radius: 0.5rem 5rem 0.5rem 5rem;
-        transform: scale(0.975, 0.975);
-        &:hover {
-            transform: scale(1, 1);
-        }
     }
     .p-image-preview-indicator {
-        transition: 0.5s all;
-        transform: scale(0.975, 0.975);
         border-radius: 0.5rem 5rem 0.5rem 5rem;
-        &:hover {
-            transform: scale(1, 1);
+    }
+}
+
+.app-dataview {
+    .p-dataview {
+        .p-dataview-header {
+            border: none;
+            background-color: transparent;
+            input {
+                background-color: transparent;
+            }
+            .p-dropdown {
+                background-color: transparent;
+            }
+        }
+        background-color: transparent;
+        .p-dataview-content {
+            .p-grid {
+                padding: 2rem;
+                gap: 1rem;
+                justify-content: center;
+            }
+            background-color: transparent;
         }
     }
 }

@@ -12,7 +12,6 @@ export class HeaderComponent {
   topnavVariant: boolean = false;
   @Input() transparent: boolean = false; //Estilos al padre
   @Input() hide: boolean = false;//Estilos al padre
-  logo:string="../../../assets/images/logo-sevilla.png";
   logoblanco:string="../../../assets/images/logo-letras-blancas.png";
   enlaces: MenuItem[] = [
     { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción

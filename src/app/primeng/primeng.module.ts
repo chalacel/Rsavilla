@@ -10,6 +10,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { SliderModule } from 'primeng/slider';
 import { PanelModule } from 'primeng/panel';
 import { ImageModule } from 'primeng/image';
+import { DataViewModule } from 'primeng/dataview';
 
 @NgModule({
   declarations: [],
@@ -27,6 +28,7 @@ import { ImageModule } from 'primeng/image';
     SliderModule,
     PanelModule,
     ImageModule,
+    DataViewModule
   ]
 })
 export class PrimengModule { }

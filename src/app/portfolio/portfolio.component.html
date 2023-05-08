@@ -1,6 +1,16 @@
 <div class="background pt-7 flex">
-    <div class="products-grid flex-grow-1">
-      <ng-container *ngFor="let product of products">
+  <div class="flex flex-column gap-2 p-2 w-full">
+    <p-dataView class="app-dataview" layout="grid" #dv [value]="products" [sortField]="'name'" [sortOrder]="1" filterBy="name,category">
+      <ng-template pTemplate="header">
+        <div class="flex flex-row flex-wrap gap-2 justify-content-center">
+          <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input class="w-16rem" placeholder="Buscar" type="text" pInputText (input)="handleSearchInput($event)" />
+          </span>
+          <p-dropdown styleClass="w-16rem" appendTo="body" [options]="categories" (onChange)="filterByCategory($event)"></p-dropdown>
+        </div>
+      </ng-template>
+      <ng-template let-product pTemplate="gridItem">
         <div class="product-card">
           <p-image styleClass="app-image w-16rem h-12rem" [src]="product.url" [alt]="product.category" width="250" [preview]="true"></p-image>
           <div class="flex flex-column gap-2">
@@ -12,6 +22,7 @@
             </div>
           </div>
         </div>
-      </ng-container>
-    </div>
+      </ng-template>
+    </p-dataView>
   </div>
+</div>

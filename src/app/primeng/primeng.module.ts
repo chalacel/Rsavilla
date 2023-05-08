@@ -9,6 +9,8 @@ import { PaginatorModule } from 'primeng/paginator';
 import { DropdownModule } from 'primeng/dropdown';
 import { SliderModule } from 'primeng/slider';
 import { PanelModule } from 'primeng/panel';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -25,6 +27,9 @@ import { PanelModule } from 'primeng/panel';
     DropdownModule,
     SliderModule,
     PanelModule,
+    InputTextareaModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PrimengModule { }

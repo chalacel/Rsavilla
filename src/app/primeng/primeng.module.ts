@@ -11,6 +11,8 @@ import { SliderModule } from 'primeng/slider';
 import { PanelModule } from 'primeng/panel';
 import { ImageModule } from 'primeng/image';
 import { DataViewModule } from 'primeng/dataview';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -28,7 +30,10 @@ import { DataViewModule } from 'primeng/dataview';
     SliderModule,
     PanelModule,
     ImageModule,
-    DataViewModule
+    DataViewModule,
+    InputTextareaModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PrimengModule { }

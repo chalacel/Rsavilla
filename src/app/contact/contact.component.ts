@@ -37,10 +37,9 @@ export class ContactComponent implements OnInit {
       email : this.formularioContacto.value.email,
       detalle : this.formularioContacto.value.detalle,
     }
-      this.httpClient.post('http://localhost:3000/sendMail', params).subscribe(resp=>{
+      this.httpClient.post('https://email-angular-rouge.vercel.app/sendMail', params).subscribe(resp=>{
         console.log(resp);
       });
   }
-
 
 }

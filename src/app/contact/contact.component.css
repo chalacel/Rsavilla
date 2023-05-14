@@ -120,7 +120,7 @@
   font-size: 15px;
   padding: 0 10px;
   z-index: 1;
-  color: #000 ;
+  color: #000;
 }
 
 .container .row100 .col .inputBox .text {
@@ -185,15 +185,12 @@
 }
 
 @media screen and (max-width: 870px) {
-
   .formContact {
     margin-top: 60px;
   }
-
 }
 
 @media screen and (max-width: 470px) {
-
   .formContact {
     margin-top: 60px;
     display: flex;
@@ -204,7 +201,6 @@
     width: 100%;
     /* background: #001923; */
   }
-
 }
 
 /* Estilos de la 2da caja  */
@@ -223,8 +219,32 @@
   align-items: center;
 }
 
-.google-map h1 {
+.map-container {
+  width: 600px;
+  height: 450px;
+  padding: 10px;
+}
+
+.map-container h1 {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .title-contact {
@@ -243,19 +263,15 @@
 }
 
 @media screen and (max-width: 900px) {
-  .contact-box{
-    height: 1025px;
-  }
-
-  .google-map h1 {
-    font-size: 1.2em;
+  .contact-box {
+    height: 1000px;
   }
 
   .contact-box {
     flex-direction: column;
   }
 
-  .google-map{
+  .google-map {
     margin-top: 70px;
   }
 
@@ -267,13 +283,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .google-map{
+  .google-map {
     margin-top: 70px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .google-map{
+  .google-map {
     margin-top: 70px;
   }
 

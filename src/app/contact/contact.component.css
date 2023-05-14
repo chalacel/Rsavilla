@@ -244,7 +244,11 @@
 
 @media screen and (max-width: 900px) {
   .contact-box{
-    height: 950px;
+    height: 1025px;
+  }
+
+  .google-map h1 {
+    font-size: 1.2em;
   }
 
   .contact-box {

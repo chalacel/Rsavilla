@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
 
   enviarEmail() : void {
     let params = {
-      nombreCompleto : this.formularioContacto.value.nombreCompleto,
+      nombreCompleto  :  this.formularioContacto.value.nombreCompleto,
       primerApellido : this.formularioContacto.value.primerApellido,
       segundoApellido : this.formularioContacto.value.segundoApellido,
       ciudad : this.formularioContacto.value.ciudad,
@@ -37,7 +37,7 @@ export class ContactComponent implements OnInit {
       email : this.formularioContacto.value.email,
       detalle : this.formularioContacto.value.detalle,
     }
-      this.httpClient.post('https://email-angular-rouge.vercel.app/sendMail', params).subscribe(resp=>{
+      this.httpClient.post('https://envio-email.vercel.app/api/sendMail', params).subscribe(resp=>{
         console.log(resp);
       });
   }

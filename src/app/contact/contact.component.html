@@ -1,32 +1,68 @@
+<section class="contact-box">
+  <div class="google-map">
+    <div class="map-container">
+      <h1>¡Visítanos y vive una experiencia inolvidable!</h1>
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1771.4582579052353!2d-74.16761999319915!3d4.631658646621749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c2bb39cb3eb%3A0x84389453e7c2d753!2sCra.%2086b%20%2342%2C%20Kennedy%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1684088798298!5m2!1ses-419!2sco"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+  <div class="title-contact">
+    <h1>Informacion de contacto</h1><br />
+    <i>reciclajesavilla@hotmail.com</i><br />
+    <i>savilla.ambiental@gmail.com</i><br />
+    <i>Wilson Pérez WhatsApp: +57 3508382041</i><br />
+    <i>Orlando Sanabria Cel: 3508382043</i><br />
+    <i>Tel: (1) 4815874</i><br />
+    <i>Nuestra direccion: Cra 86B # 42-06 Sur, Bogotá DC.</i><br />
+    <br />
+    <br />
+    <h1>Horarios de atencion</h1><br />
+    <i>Lunes a viernes: 07:00 - 17:00</i><br />
+    <i>Sabado: 07:00 - 13:00</i><br />
+  </div>
+</section>
 <section class="background">
   <form [formGroup]="formularioContacto">
-  <div class="formContact">
-    <div class="container">
-      <h2>¡Te esperamos!</h2>
+    <div class="formContact">
+      <div class="container">
+        <h2>¡Te esperamos!</h2>
 
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input
-                type="text"
-                formControlName="nombreCompleto"
-              />
+              <input type="text" formControlName="nombreCompleto" />
               <span class="text">Nombre completo</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" pInputText formControlName="primerApellido"
-              class="form-control" />
+              <input
+                type="text"
+                pInputText
+                formControlName="primerApellido"
+                class="form-control"
+              />
               <span class="text">Primer apellido</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" pInputText formControlName="segundoApellido"
-              class="form-control" />
+              <input
+                type="text"
+                pInputText
+                formControlName="segundoApellido"
+                class="form-control"
+              />
               <span class="text">Segundo apellido</span>
               <span class="line"></span>
             </div>
@@ -35,24 +71,36 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input type="text" pInputText formControlName="ciudad"
-              class="form-control" />
+              <input
+                type="text"
+                pInputText
+                formControlName="ciudad"
+                class="form-control"
+              />
               <span class="text">Ciudad</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" pInputText formControlName="telefono"
-              class="form-control" />
+              <input
+                type="text"
+                pInputText
+                formControlName="telefono"
+                class="form-control"
+              />
               <span class="text">Telefono</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" pInputText formControlName="email"
-              class="form-control" />
+              <input
+                type="text"
+                pInputText
+                formControlName="email"
+                class="form-control"
+              />
               <span class="text">Email</span>
               <span class="line"></span>
             </div>
@@ -61,8 +109,11 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox textarea">
-              <textarea pInputTextarea formControlName="detalle"
-              class="form-control" ></textarea>
+              <textarea
+                pInputTextarea
+                formControlName="detalle"
+                class="form-control"
+              ></textarea>
               <span class="text">Escribe tu mensaje...</span>
               <span class="line"></span>
             </div>
@@ -74,8 +125,7 @@
             <input type="submit" value="Enviar" (click)="enviarEmail()" />
           </div>
         </div>
-
+      </div>
     </div>
-  </div>
   </form>
 </section>

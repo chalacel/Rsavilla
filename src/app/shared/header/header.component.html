@@ -1,16 +1,15 @@
 <div class="topnav surface-0 flex flex-row justify-content-between align-items-center flex-wrap gap-2 shadow-custom"
-    [ngClass]="{
-        'bg-black': tapnavVariant,
-        'bg-transparent': transparent && tapnavVariant,
-        'hide': hide
-    }">
+    [ngClass]="{ 'hide': hide }">
 
     <span class="flex flex-row gap-2 align-items-center py-1 cursor-pointer" routerLink="home" pTooltip="Ir a inicio" tooltipPosition="bottom">
-        <img class="logo" src="../../../assets/images/logo-sevilla.png" alt="Logo" height="48px" width="auto">
-        <span class="font-semibold text-4xl" routerLink="home">R. SAVILLA SAS BIC</span>
+        <img class="logo" [src]="logoblanco" alt="Logo" height="48px" width="auto">
+        <div class="flex flex-column align-items-center">
+            <span class="font-semibold text-2xl" routerLink="home">R. SAVILLA</span>
+            <span class="font-semibold text-2xl" routerLink="home">SAS BIC</span>
+        </div>
     </span>
     <div class="flex flex-row h-full px-2 align-items-center">
-        <!-- <p-button styleClass="p-button-text p-button-rounded text-color" [icon]="'pi pi-search font-bold text-xl' + (tapnavVariant ? ' text-white' : '')"></p-button> -->
-        <p-menubar class="app-menubar" [ngClass]="{'white-variant': tapnavVariant}"  [model]="enlaces"></p-menubar>
+        <p-button styleClass="p-button-text p-button-rounded text-color" [icon]="'pi pi-search text-white'"></p-button>
+        <p-menubar class="app-menubar" [ngClass]="{'white-variant': topnavVariant}"  [model]="enlaces"></p-menubar>
     </div>
 </div>

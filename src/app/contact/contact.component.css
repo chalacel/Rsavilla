@@ -62,7 +62,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   overflow: hidden;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(5px);
 }
 
 .container::before {
@@ -155,6 +155,22 @@
   pointer-events: none;
 }
 
+.container .row100 .col .inputBox input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: border 0.5s;
+  border-radius: 5px;
+}
+
+.container .row100 .col .inputBox textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: border 0.5s;
+  border-radius: 5px;
+}
+
+textarea:focus + .text {
+  display: none;
+}
+
 .container .row100 .col .inputBox input:focus ~ .line,
 .container .row100 .col .inputBox input:valid ~ .line {
   height: 100%;
@@ -184,13 +200,45 @@
   border-radius: 2px;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (min-width: 1020px) {
+
+  .container {
+    width:950px;
+  }
+
   .formContact {
     margin-top: 60px;
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (min-width: 960px) {
+
+  .container {
+    width:900px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .container {
+    width:750px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .container {
+    width:350px;
+  }
+
   .formContact {
     margin-top: 60px;
     display: flex;

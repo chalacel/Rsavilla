@@ -251,6 +251,14 @@ textarea:focus + .text {
   }
 }
 
+@media screen and (min-width: 300px) {
+
+  .container {
+    width:300px;
+  }
+
+}
+
 /* Estilos de la 2da caja  */
 
 .contact-box {

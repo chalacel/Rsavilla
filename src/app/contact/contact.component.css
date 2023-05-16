@@ -200,65 +200,6 @@ textarea:focus + .text {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 1020px) {
-
-  .container {
-    width:950px;
-  }
-
-  .formContact {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-
-  .container {
-    width:900px;
-  }
-
-  .formContact {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-
-  .container {
-    width:750px;
-  }
-
-  .formContact {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-
-  .container {
-    width:350px;
-  }
-
-  .formContact {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    width: 100%;
-    /* background: #001923; */
-  }
-}
-
-@media screen and (min-width: 300px) {
-
-  .container {
-    width:300px;
-  }
-
-}
-
 /* Estilos de la 2da caja  */
 
 .contact-box {
@@ -352,5 +293,59 @@ textarea:focus + .text {
   .google-map,
   .title-contact {
     border-right: none;
+  }
+}
+
+
+/* ---------------------------------- */
+
+@media screen and (max-width: 1020px) {
+
+  .container {
+    width:950px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .container {
+    width:900px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    width:750px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .container {
+    width:300px;
+  }
+
+  .formContact {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    /* background: #001923; */
   }
 }

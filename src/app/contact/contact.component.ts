@@ -8,10 +8,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-
   formularioContacto: FormGroup;
 
-  constructor(private httpClient : HttpClient) {
+  constructor(private httpClient: HttpClient) {
     this.formularioContacto = new FormGroup({
       nombreCompleto: new FormControl('', [Validators.required]),
       primerApellido: new FormControl('', [Validators.required]),
@@ -23,23 +22,36 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  ngOnInit() : void {
+  ngOnInit(): void {}
 
-  }
+  enviarEmail(): void {
+    let params = {};
 
-  enviarEmail() : void {
-    let params = {
-      nombreCompleto  :  this.formularioContacto.value.nombreCompleto,
-      primerApellido : this.formularioContacto.value.primerApellido,
-      segundoApellido : this.formularioContacto.value.segundoApellido,
-      ciudad : this.formularioContacto.value.ciudad,
-      telefono : this.formularioContacto.value.telefono,
-      email : this.formularioContacto.value.email,
-      detalle : this.formularioContacto.value.detalle,
+    if (this.formularioContacto.value) {
+      const {
+        nombreCompleto,
+        primerApellido,
+        segundoApellido,
+        ciudad,
+        telefono,
+        email,
+        detalle,
+      } = this.formularioContacto.value;
+
+      params = {
+        nombreCompleto,
+        primerApellido,
+        segundoApellido,
+        ciudad,
+        telefono,
+        email,
+        detalle,
+      };
     }
-      this.httpClient.post('https://envio-email.vercel.app/api/sendMail', params).subscribe(resp=>{
+    this.httpClient
+      .post('https://envio-email.vercel.app/api/sendMail', params)
+      .subscribe((resp) => {
         console.log(resp);
       });
   }
-
 }

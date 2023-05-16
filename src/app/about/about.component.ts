@@ -10,11 +10,12 @@ export class AboutComponent {
   first: number = 0;
   totalRecords: number = 15;
 
-  constructor() {
-
-  }
+  constructor() {}
 
   onPageChange({ page, first, rows, pageCount }: Record<string, number>) {
     this.first = first;
   }
+
+
+
 }

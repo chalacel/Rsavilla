@@ -1,34 +1,156 @@
 <div class="background pt-7">
-  <main class="work-content">
-      <h1>¿Quiénes Somos?</h1>
-      <span class="body">
-        R Savilla SAS es una sociedad por acciones simplificadas matriculada el martes 15 de marzo de 2016 en la cámara de comercio de Bogotá. Esta empresa se dedica principalmente a comercio al por mayor de desperdicios, desechos y chatarra.
-  </span>
-  <span class="body">
-      A través de la reincorporación de madera proveniente de estibas, desarrollamos
-      procesos de economía circular como nuestro proceso de valor, siendo reconocidos como
-      negocios verdes.
-  </span>
+  <main class="flex flex-column gap-2 relative w-full py-3 px-5">
+    <section>
+      <div class="quienes-somos">
+        <h1 data-text="&nbsp;¿Quiénes Somos?&nbsp;">
+          &nbsp;¿Quiénes Somos?&nbsp;
+        </h1>
+      </div>
+      <p class="body-copy">
+        R Savilla SAS es una sociedad por acciones simplificadas matriculada el
+        martes 15 de marzo de 2016 en la cámara de comercio de Bogotá. Esta
+        empresa se dedica principalmente a comercio al por mayor de
+        desperdicios, desechos y chatarra.
+      </p>
 
-  <h1>Misión</h1>
+      <div class="relative w-full py-4">
+        <div class="grid-columns">
+          <div class="flex flex-column gap-2 align-items-center py-2">
+            <div class="contenedor">
+              <div class="tarjeta1 flex flex-column gap-2 align-items-center">
+                <img
+                  class="img-reciclables"
+                  src="../../assets/images/imagenes-nosotros/img1.jpg"
+                  alt="Reciclaje de plásticos"
+                />
+              </div>
+            </div>
+          </div>
 
-  <span class="body">
-    Contribuir en la recuperación de la madera y afines, aportando en la preservación del medio ambiente y los recursos naturales, realizando y ejecutando proyectos que surjan desde un pensamiento ecológico y sostenible, en beneficio de las personas y el entorno, de manera normativa, con calidad y ambiente de familia.
-  </span>
-  <h1>Visión</h1>
+          <div class="flex flex-column gap-2 align-items-center py-2">
+            <div class="contenedor">
+              <div class="tarjeta1 flex flex-column gap-2 align-items-center">
+                <img
+                  class="img-reciclables"
+                  src="../../assets/images/imagenes-nosotros/img2.jpg"
+                  alt="Reciclaje de cartoon"
+                />
+              </div>
+            </div>
+          </div>
 
-  <span class="body">
-    Ser una empresa sostenible en la recuperación y nuevo uso de la madera y afines, preocupada por conservar el ambiente, con desarrollo económico, construyendo una conciencia humanista y ambientalista, que reconozca la obra de Dios en el cuidado del planeta.
-  </span>
-  <div class="flex flex-row w-full justify-content-center">
-      <img class="about-image" src="../../assets/images/logo-sevilla.png" alt="cadena de Valor" style="max-width: 300px">
-  </div>
+          <div class="flex flex-column gap-2 align-items-center py-2">
+            <div class="contenedor">
+              <div class="tarjeta1 flex flex-column gap-2 align-items-center">
+                <img
+                  class="img-reciclables"
+                  src="../../assets/images/imagenes-nosotros/img3.jpg"
+                  alt="Reciclaje de estibas"
+                />
+              </div>
+            </div>
+          </div>
 
-    <div class="flex-1">
-        <div class="w-full flex flex-row justify-content-center">
-            <img src="../../assets/images/carousel/image{{first + 1}}.jpg" class="carousel-image"/>
+          <div class="flex flex-column gap-2 align-items-center py-2">
+            <div class="contenedor">
+              <div class="tarjeta1 flex flex-column gap-2 align-items-center">
+                <img
+                  class="img-reciclables"
+                  src="../../assets/images/imagenes-nosotros/img4.jpg"
+                  alt="Reciclaje chatarra"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <p-paginator class="app-paginator" [first]="first" [rows]="1" [totalRecords]="totalRecords" (onPageChange)="onPageChange($event)" [showJumpToPageDropdown]="true" [showPageLinks]="false"></p-paginator>
-    </div>
-</main>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="img-logo"></div>
+
+      <div class="quienes-somos">
+        <h1 data-text="&nbsp;Nuestra Mision y Visión&nbsp;">
+          &nbsp;Nuestra Mision y Visión&nbsp;
+        </h1>
+      </div>
+
+      <div class="relative w-full py-4">
+        <div class="grid-columns">
+          <div class="flex flex-column gap-2 align-items-center">
+            <div class="contenerdor">
+              <div class="tarjeta flex flex-column gap-2 align-items-center">
+                <h1 data-text="&nbsp;Misión&nbsp;">&nbsp;Misión&nbsp;</h1>
+                <p class="body-copy py-1 px-3">
+                  Contribuir en la recuperación de la madera y afines, aportando
+                  en la preservación del medio ambiente y los recursos
+                  naturales, realizando y ejecutando proyectos que surjan desde
+                  un pensamiento ecológico y sostenible, en beneficio de las
+                  personas y el entorno, de manera normativa, con calidad y
+                  ambiente de familia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-column gap-2 align-items-center">
+            <div class="contenerdor">
+              <div class="tarjeta flex flex-column gap-2 align-items-center">
+                <h1 data-text="&nbsp;Visión&nbsp;">&nbsp;Visión&nbsp;</h1>
+                <p class="body-copy py-1 px-3">
+                  Ser una empresa sostenible en la recuperación y nuevo uso de
+                  la madera y afines, preocupada por conservar el ambiente, con
+                  desarrollo económico, construyendo una conciencia humanista y
+                  ambientalista, que reconozca la obra de Dios en el cuidado del
+                  planeta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles-values">
+      <div class="principios-valores">
+        <h1 data-text="&nbsp;Principios y Valores&nbsp;">
+          &nbsp;Principios y Valores&nbsp;
+        </h1>
+      </div>
+      <p class="body-copy">
+        Nuestros principios y valores definen quienes somos, en lo que pensamos,
+        para saber cómo debemos interactuar con nuestro equipo de trabajo y
+        clientes. · Ambiente familiar · Servicio · Lealtad y transparencia ·
+        Cuidado del medio ambiente
+      </p>
+    </section>
+
+    <section id="nuestro-equipo">
+      <div class="flex-1 paginator-container">
+        <div class="nuestro-equipo">
+          <h1 data-text="&nbsp;Nuestro equipo&nbsp;">
+            &nbsp;Nuestro equipo&nbsp;
+          </h1>
+        </div>
+
+        <div class="w-full flex flex-row justify-content-center">
+          <img
+            src="../../assets/images/carousel/imagen{{ first + 1 }}.jpg"
+            class="carousel-image"
+          />
+        </div>
+
+        <p-paginator
+          class="app-paginator"
+          [first]="first"
+          [rows]="1"
+          [totalRecords]="totalRecords"
+          (onPageChange)="onPageChange($event)"
+          [showJumpToPageDropdown]="true"
+          [showPageLinks]="false"
+          currentPageReportTemplate="{first} de {totalRecords}"
+        ></p-paginator>
+      </div>
+    </section>
+  </main>
 </div>

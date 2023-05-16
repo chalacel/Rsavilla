@@ -6,7 +6,7 @@
   top: 0;
   position: fixed;
   z-index: 2000;
-  text-shadow: 0 0 4px #fff;
+  text-shadow: 0 0 1px #fff;
   background-color: rgba(0, 0, 0, 0.6) !important;
   color: var(--surface-0);
 }

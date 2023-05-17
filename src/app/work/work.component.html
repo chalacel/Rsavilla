@@ -1,93 +1,76 @@
 <div class="background pt-7">
-    <main class="work-content">
-        <h1>Eco-productos</h1>
+  <main class="work-content">
+    <h1>Eco-productos</h1>
+    <div class="card-grid gap-3 justify-content-evenly align-items-center">
+      <div class="body-card px-4 py-3">
         <span class="body">
-            Fabricamos diferentes tipos de muebles para el hogar, entre ellos: base camas, sofás, comedores, armarios y
-            otros.
-            A través de la reincorporación de madera proveniente de estibas, desarrollando procesos de economía circular
-            como
-            nuestro proceso de valor.
+          Fabricamos diferentes tipos de muebles para el hogar, entre ellos: base camas, sofás, comedores, armarios y otros.
+          A través de la reincorporación de madera proveniente de estibas, desarrollando procesos de economía circular como nuestro proceso de valor.
         </span>
-        <section class="picture-grid">
-            <div class="image-wrapper shadow-image flex flex-column justify-content-between">
-                <img class="about-image" src="../../assets/images/Base1.jpg" alt="Base Cama">
-            </div>
-            <div class="image-wrapper shadow-image flex flex-column justify-content-between">
-                <img class="about-image" src="../../assets/images/Base2.jpg" alt="Armarios">
-            </div>
-            <div class="image-wrapper shadow-image flex flex-column justify-content-between">
-                <img class="about-image" src="../../assets/images/Base3.jpg" alt="Cabeceros">
-            </div>
-        </section>
+      </div>
+      <div class="body-card px-4 py-3">
         <span class="body">
-            A través de la reincorporación de madera proveniente de estibas, desarrollamos
-            procesos de economía circular como nuestro proceso de valor, siendo reconocidos como
-            negocios verdes.
+          A través de la reincorporación de madera proveniente de estibas, desarrollamos
+          procesos de economía circular como nuestro proceso de valor, siendo reconocidos como
+          negocios verdes.
         </span>
-
-        <h1>Recuperación de materiales</h1>
-
-        <span class="body">
-            En la recuperación y aprovechamiento del material reciclable, contamos con
-            la siguiente cadena de valor
-
-            <div class="flex flex-row w-full justify-content-center">
-                <img class="about-image" src="../../assets/images/E_Circular.png" alt="cadena de Valor"
-                    style="max-width: 500px">
+      </div>
+    </div>
+    <section class="picture-grid">
+      <div class="image-wrapper flex flex-column justify-content-between">
+        <img class="about-image shadow-image" src="../../assets/images/Base1.jpg" alt="Base Cama">
+      </div>
+      <div class="image-wrapper flex flex-column justify-content-between">
+        <img class="about-image shadow-image" src="../../assets/images/Base2.jpg" alt="Armarios">
+      </div>
+      <div class="image-wrapper flex flex-column justify-content-between">
+        <img class="about-image shadow-image" src="../../assets/images/Base3.jpg" alt="Cabeceros">
+      </div>
+      <div class="image-wrapper flex flex-column justify-content-between">
+        <img class="about-image shadow-image" src="../../assets/images/portfolio/mueble_1.png" alt="Muebles">
+      </div>
+      <div class="image-wrapper flex flex-column justify-content-between">
+        <img class="about-image shadow-image" src="../../assets/images/portfolio/comedor_7.png" alt="Comedores">
+      </div>
+    </section>
+    <h1>Recuperación de materiales</h1>
+    
+    <span class="body">
+      <p>
+        En la recuperación y aprovechamiento del material reciclable, contamos con
+        la siguiente cadena de valor
+      </p>
+      <div class="flex flex-row w-full justify-content-center">
+        <img class="about-image" src="../../assets/images/E_Circular2.png" alt="cadena de Valor" style="max-width: 500px">
+      </div>
+      <p>
+        Somos una empresa que presta el servicio de recolección y aprovechamiento de residuos sólidos en varias
+        ciudades a nivel nacional.
+        Generamos certificados de gestión y disposición final.
+      </p>
+    </span>
+    <div class="flex flex-row justify-content-center w-full">
+      <h1 class="text-center">Tipo de materiales que recuperamos</h1>
+    </div>
+    
+    <div class="grid-container">
+      <ng-container *ngFor="let material of materials">
+        <div class="grid-item">
+          <div class="image-circle rotate">
+            <div class="circle-content back face border-circle">
+              <ul class="inner-list">
+                <li *ngFor="let item of material.items">
+                  {{item}}
+                </li>
+              </ul>
             </div>
-
-            Somos una empresa que presta el servicio de recolección y aprovechamiento de residuos sólidos en varias
-            ciudades a nivel nacional.
-            Generamos certificados de gestión y disposición final.
-
-
-        </span>
-        <h1>Tipo de materiales que recuperamos</h1>
-
-        <div class="grid-container">
-            <div class="grid-item">
-              <h2>Madera</h2>
-              <li>Estibas</li>
-              <li>Tablas</li>
-              <li>Tablones</li>
-              <li>Madera de diferente medida</li>
-              <img src="../../assets/images/work/madera.jpg" alt="Madera">
-            </div>
-          
-            <div class="grid-item">
-              <h2>Plástico</h2>
-              <li>Retal</li>
-              <li>Tapas</li>
-              <li>Bolsa</li>
-              <li>Botellas</li>
-              <img src="../../assets/images/work/plastico.png" alt="Plástico">
-            </div>
-          
-            <div class="grid-item">
-              <h2>Cartón</h2>
-              <li>Plegadiza</li>
-              <li>Láminas de cartón</li>
-              <li>Cajas de diferentes tamaños</li>
-              <li>Tetra Pack</li>
-              <li>Polyboard</li>
-              <img src="../../assets/images/work/carton.png" alt="Cartón">
-            </div>
-          
-            <div class="grid-item">
-              <h2>Papel</h2>
-              <li>Archivo</li>
-              <li>Periódico</li>
-              <li>Kraft</li>
-              <img src="../../assets/images/work/papel.png" alt="Papel">
-            </div>
-          
-            <div class="grid-item">
-              <h2>Material Metálico</h2>
-              <li>Aluminio</li>
-              <li>Hierro</li>
-              <li>Otros</li>
-              <img src="../../assets/images/work/material_metálico.png" alt="Material Metálico">
+            <div class="front face border-circle">
+              <h2 class="image-title">{{material.title}}</h2>
+              <img class="image" [src]="material.image" [alt]="material.title">
             </div>
           </div>
-    </main>
+        </div>
+      </ng-container>
+    </div>
+  </main>
 </div>

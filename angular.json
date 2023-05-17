@@ -31,7 +31,8 @@
               "src/assets/theme.css",
               "src/assets/styles/primeflex-extensions.scss",
               "node_modules/primeflex/primeflex.css",
-              "src/assets/styles/primeng-overrides.scss"
+              "src/assets/styles/primeng-overrides.scss",
+              "src/assets/styles/animations.scss"
             ],
             "scripts": []
           },

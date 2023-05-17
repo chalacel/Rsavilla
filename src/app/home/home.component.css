@@ -178,3 +178,10 @@ Aqui inician los estilos de los efectos cards
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
 }
+
+
+.warningtext{
+  font-size: 20px;
+  line-height: 3rem;
+  text-shadow: 1.5px 1.5px 2px var(--secondary-color);
+}

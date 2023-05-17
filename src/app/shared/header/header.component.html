@@ -1,6 +1,5 @@
 <div class="topnav surface-0 flex flex-row justify-content-between align-items-center flex-wrap gap-2 shadow-custom"
     [ngClass]="{ 'hide': hide }">
-
     <span class="flex flex-row gap-2 align-items-center py-1 cursor-pointer" routerLink="home" pTooltip="Ir a inicio" tooltipPosition="bottom">
         <img class="logo" [src]="logoblanco" alt="Logo" height="48px" width="auto">
         <div class="flex flex-column align-items-center">
@@ -9,7 +8,6 @@
         </div>
     </span>
     <div class="flex flex-row h-full px-2 align-items-center">
-       
-        <p-menubar class="app-menubar" [ngClass]="{'white-variant': topnavVariant}"  [model]="enlaces"></p-menubar>
+    <p-menubar class="app-menubar" [ngClass]="{'white-variant': topnavVariant}"  [model]="enlaces"></p-menubar>
     </div>
 </div>

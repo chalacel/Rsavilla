@@ -3,6 +3,27 @@
     <h1 class="name-company">R. SAVILLA SAS BIC</h1>
     <h3 class="message">Recolección y Aprovechamiento de Materiales</h3>
     <h5 class="message">Nit: 900950210-0</h5>
+
+
+    <div class="flex justify-content-left flex-wrap gap-5">
+      <p-button (click)="showDialog('center')" icon="pi pi-home" label="Info" styleClass="p-button-help"></p-button>
+    </div>
+    <p-dialog header="Integrantes" [(visible)]="visibleinfo1" [position]="position" [style]="{ width: '40vw' }">
+    <p class="warningtext">
+        David Rojas Rodriguez
+        <br>
+        Jessica Chala Acevedo
+        <br>
+        Marlon Aguinda Bustos
+        <br>
+        Sebastian Florez Machado
+        <br>
+        <br>
+        <img src="../../assets/images/Image_018C49C4_1D5D_33C9_41B8_A70BB6CD663A_es.png" alt="Colores" style="max-width: 300px">
+    </p>
+  </p-dialog>
+
+
   </div>
 </section>
 <div class="w-full min-h-screen section-background">
@@ -23,4 +44,17 @@
       </div>
     </div>
   </section>
+
+
+  <div class="flex justify-content-left flex-wrap gap-2">
+    <p-button (click)="showDialog('left')" icon="pi pi-home" label="Info2" styleClass="p-button-help"></p-button>
+  </div>
+  <p-dialog header="Secciones" [(visible)]="visibleinfo2" [position]="position" [style]="{ width: '40vw' }">
+    <p>
+      Aqui encontraremos un breve resumen y direccionamiento de cada sección de la pagina.
+      También vemos los colores que se utilizaron para el desarrollo de la pagina
+    </p>
+    <img src="../../assets/images/Colores.jpg" alt="Colores" style="max-width: 500px">
+  </p-dialog>
+
 </div>

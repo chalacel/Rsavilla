@@ -14,23 +14,23 @@ export class HeaderComponent {
   @Input() hide: boolean = false;//Estilos al padre
   logoblanco: string = "../../../assets/images/logo-letras-blancas.png";
   enlaces: MenuItem[] = [
-    { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción
+    { routerLink: "/home", label: "Inicio", icon: "pi pi-home", tooltip: "Ir a inicio" }, //Introducción
     //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores 
-    { routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase", },
-    { routerLink: "/portfolio", label: "Portafolio", icon: "pi pi-shopping-cart", },
+    { routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase", tooltip: "Ir a Nuestro trabajo" },
+    { routerLink: "/portfolio", label: "Portafolio", icon: "pi pi-shopping-cart", tooltip: "Ir a Portafolio" },
     //Productos con el fin de mostrar el proceso de aprovechamiento con la madera y vender nuestros muebles
     {
-      routerLink: "/about", label: "Nosotros", icon: "pi pi-user", items: [{
+      routerLink: "/about", label: "Nosotros", icon: "pi pi-user", tooltip: "Ir a Nosotros", items: [{
         label: "Principios y valores", command: () => this.scrollToElement("principles-values")
       },
       {
-        label: "Nuestro equipo", command: () => this.scrollToElement("nuestro-equipo")
+        label: "Nuestro equipo", tooltip: "Ir a Nuestro equipo", command: () => this.scrollToElement("nuestro-equipo")
       },]
     },
     //mision vision valores corporativos, sede, nuestro equipo
-    { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", },
+    { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", tooltip: "Ir a Gestión Corporativa" },
     // Mostrar los reconocimientos ambientales y sociales logrados y reportes de gestion o sostenibilidad
-    { routerLink: "/contact", label: "Contacto", icon: "pi pi-phone", },
+    { routerLink: "/contact", label: "Contacto", icon: "pi pi-phone", tooltip: "Ir a Contacto" },
   ];
 
   constructor(

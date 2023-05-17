@@ -1,11 +1,41 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  
+  
+
+  position!: string;
+
+ 
+  visibleinfo1:boolean=false;
+  visibleinfo2:boolean=false;
+  
+  showDialog(position: string) {
+    switch (position) {
+      case 'center':
+        this.position = position;
+        this.visibleinfo1 = true;
+        break;
+      case 'left':
+        this.position = position;
+        this.visibleinfo2 = true;
+        break;
+      default:
+        break;
+    }
+  }
+ 
+
+
+
+
+
   dropsSections = [
     [
       {

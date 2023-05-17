@@ -12,62 +12,221 @@
   z-index: -1;
 }
 
-.image {
-  width: 200px;
-  height: 200px;
+.card {
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-.body {
-  font-size: 1.14rem;
-  font-weight: 350;
-  padding: 1rem;
+.card:hover .contcard {
+  right: 0;
 }
 
-:host ::ng-deep .p-panel-header {
-  background: var(--primary-color);
+.imgcard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.contcard {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.tcard {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.ccard {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+/*Card´s Section 2*/
+
+.card.poster::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #10a617, 50%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card.poster:hover .poster::before {
+  top: 0px;
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover .poster img {
+  transform: translateY(-50px);
+  filter: blur(5px);
+}
+
+.card .details {
+  position: absolute;
+  top: calc(100% - 6rem);
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card:hover .details {
+  top: 0px;
+}
+
+.card .details .logo {
+  max-width: 200px;
+  object-fit: contain;
+  height: 5rem;
+  opacity: 80%;
+}
+
+.card .details .info {
+  color: #Fff;
+  margin-top: 10px;
+}
+
+.card .details .evid {
+  position: relative;
+}
+
+.card .details .evid h4 {
+  color: #Fff;
+  margin-top: 10px;
+}
+
+.card .details .evid ul {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card .details .evid ul li {
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #Fff;
+}
+
+.card .details .evid ul li img {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+/*Card´s Section 3*/
+
+.crd {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+
+.crd .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.crd .front {
+  transform: perspective(600px) rotateY(00deg);
+  box-shadow: 0 6px 10px #000;
+}
+
+.crd .front img {
+  position: absolute;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.crd .front h3 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #Fff;
+  background: rgb(0, 0, 0, .4);
+  text-align: center;
+
+}
+
+.crd .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(15, 138, 21);
+  height: 100%;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px;
+}
+
+.crd .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.crd .back h3 {
+  font-size: 30px;
   margin-top: 20px;
-  margin-left: 3px;
-  border: 1px solid var(--primary-color);
+  letter-spacing: 2px;
 }
 
-:host ::ng-deep .p-panel-header:hover {
-  background-color: #70be46;
+.crd .back p {
+  letter-spacing: 1px;
 }
 
-:host ::ng-deep .p-panel-content {
-  border: 1px solid #70be46;
-  background-color: #EEEEEE;
-  margin-left: 3px;
-  border-top: none;
+
+.crd:hover .front {
+  transform: perspective(600px) rotateY(180deg);
 }
 
-:host ::ng-deep .blue-panel p {
-  color: black;
-  font-weight: 400;
-}
-
-:host ::ng-deep .blue-panel{
-  width: 90%;
-}
-
-:host ::ng-deep .p-panel-header .p-panel-header-icon {
-  width: 2rem;
-  height: 2rem;
-  color: black;
-}
-
-:host ::ng-deep .p-panel-header .p-panel-header-icon:focus {
-  outline: 0 none;
-  outline-offset: 0;
-  box-shadow: 0 0 0 0.04rem #4F9951;
-}
-
-:host ::ng-deep .blue-panel2 p {
-  color: black;
-  font-weight: 400;
-}
-
-:host ::ng-deep .blue-panel2{
-  width: 90%;
-  margin-left: 25px;
+.crd:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }

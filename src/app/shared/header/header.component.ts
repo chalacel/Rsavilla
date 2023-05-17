@@ -19,23 +19,15 @@ export class HeaderComponent {
     { routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase", },
     { routerLink: "/portfolio", label: "Portafolio", icon: "pi pi-shopping-cart", },
     //Productos con el fin de mostrar el proceso de aprovechamiento con la madera y vender nuestros muebles
-
     {
-      routerLink: "/about", label: "Nosotros", icon: "pi pi-user",
-      items: [
-        {
-          label: "Principios y valores",
-          command: () => this.scrollToElement("principles-values")
-        },
-        {
-          label: "Nuestro equipo",
-          command: () => this.scrollToElement("nuestro-equipo")
-        },
-
-      ]
+      routerLink: "/about", label: "Nosotros", icon: "pi pi-user", items: [{
+        label: "Principios y valores", command: () => this.scrollToElement("principles-values")
+      },
+      {
+        label: "Nuestro equipo", command: () => this.scrollToElement("nuestro-equipo")
+      },]
     },
     //mision vision valores corporativos, sede, nuestro equipo
-
     { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", },
     // Mostrar los reconocimientos ambientales y sociales logrados y reportes de gestion o sostenibilidad
     { routerLink: "/contact", label: "Contacto", icon: "pi pi-phone", },

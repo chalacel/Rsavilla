@@ -15,6 +15,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ManagementComponent } from './management/management.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CardModule } from 'primeng/card';
+import { GalleriaModule } from 'primeng/galleria';
+import { TabViewModule } from 'primeng/tabview';
 
 
 @NgModule({
@@ -37,6 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    GalleriaModule,
+    TabViewModule,
+    CardModule,
     HttpClientModule
   ],
   providers: [],

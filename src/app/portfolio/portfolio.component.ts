@@ -15,7 +15,7 @@ export class PortfolioComponent {
     totalProducts: 0,
     products: {}
   };
-
+  whatsappNumber = "3122974269";
   onDestroy$: Subject<void> = new Subject();
   search$: Subject<string> = new Subject();
 
@@ -81,5 +81,12 @@ export class PortfolioComponent {
   handleSearchInput(event: any) {
     const value = event.target.value;
     this.search$.next(value);
+  }
+
+  sendMessage() {
+    const message = Object.entries(this.cart.products).map(([key, value]) => {
+      return `${value?.name} - ${value?.count}`;
+    }).join(", ");
+    window.open(`https://api.whatsapp.com/send?phone=${this.whatsappNumber}&text=Hola, Me gustaria realizar un pedido con los siguientes productos: ${message}`, "_blank")
   }
 }

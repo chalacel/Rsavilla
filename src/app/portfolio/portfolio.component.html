@@ -8,6 +8,7 @@
             <input class="w-16rem" placeholder="Buscar" type="text" pInputText (input)="handleSearchInput($event)" />
           </span>
           <p-dropdown styleClass="w-16rem" appendTo="body" [options]="categories" (onChange)="filterByCategory($event)"></p-dropdown>
+          <p-button styleClass="p-button-secondary" label="Realizar pedido" (onClick)="sendMessage()"></p-button>
         </div>
       </ng-template>
       <ng-template let-product pTemplate="gridItem">

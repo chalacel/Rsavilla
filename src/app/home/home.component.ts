@@ -8,32 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   
-  
-
-  position!: string;
-
- 
-  visibleinfo1:boolean=false;
-  visibleinfo2:boolean=false;
-  
-  showDialog(position: string) {
-    switch (position) {
-      case 'center':
-        this.position = position;
-        this.visibleinfo1 = true;
-        break;
-      case 'left':
-        this.position = position;
-        this.visibleinfo2 = true;
-        break;
-      default:
-        break;
-    }
-  }
- 
-
-
-
 
 
   dropsSections = [
